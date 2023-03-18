@@ -1,6 +1,8 @@
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
 /* Reset box-model and set borders */
 /* ============================================ */
+
 *,
 ::before,
 ::after {
@@ -11,11 +13,13 @@
 
 /* Document */
 /* ============================================ */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  * 3. Remove gray overlay on links for iOS.
  */
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -24,9 +28,11 @@ html {
 
 /* Sections */
 /* ============================================ */
+
 /**
  * Remove the margin in all browsers.
  */
+
 body {
   margin: 0;
 }
@@ -34,12 +40,14 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
+
 main {
   display: block;
 }
 
 /* Vertical rhythm */
 /* ============================================ */
+
 p,
 table,
 blockquote,
@@ -54,6 +62,7 @@ dl {
 
 /* Headings */
 /* ============================================ */
+
 h1,
 h2,
 h3,
@@ -67,6 +76,7 @@ h6 {
 
 /* Lists (enumeration) */
 /* ============================================ */
+
 ul,
 ol {
   margin: 0;
@@ -76,6 +86,7 @@ ol {
 
 /* Lists (definition) */
 /* ============================================ */
+
 dt {
   font-weight: bold;
 }
@@ -86,10 +97,12 @@ dd {
 
 /* Grouping content */
 /* ============================================ */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
@@ -104,6 +117,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: inherit; /* 2 */
@@ -115,9 +129,11 @@ address {
 
 /* Text-level semantics */
 /* ============================================ */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
+
 a {
   background-color: transparent;
   text-decoration: none;
@@ -128,14 +144,15 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+
 b,
 strong {
   font-weight: bolder;
@@ -145,6 +162,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 code,
 kbd,
 samp {
@@ -155,6 +173,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+
 small {
   font-size: 80%;
 }
@@ -163,6 +182,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+
 sub,
 sup {
   font-size: 75%;
@@ -181,9 +201,11 @@ sup {
 
 /* Replaced content */
 /* ============================================ */
+
 /**
  * Prevent vertical alignment issues.
  */
+
 svg,
 img,
 embed,
@@ -194,19 +216,20 @@ iframe {
 
 /* Forms */
 /* ============================================ */
+
 /**
  * Reset form fields to make them styleable.
  * 1. Make form elements stylable across systems iOS especially.
  * 2. Inherit text-transform from parent.
  */
+
 button,
 input,
 optgroup,
 select,
 textarea {
   -webkit-appearance: none; /* 1 */
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -221,23 +244,25 @@ textarea {
 /**
  * Correct cursors for clickable elements.
  */
+
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   cursor: pointer;
 }
 
 button:disabled,
-[type=button]:disabled,
-[type=reset]:disabled,
-[type=submit]:disabled {
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
   cursor: default;
 }
 
 /**
  * Improve outlines for Firefox and unify style with input elements & buttons.
  */
+
 :-moz-focusring {
   outline: auto;
 }
@@ -249,6 +274,7 @@ select:disabled {
 /**
  * Remove padding
  */
+
 option {
   padding: 0;
 }
@@ -256,6 +282,7 @@ option {
 /**
  * Reset to invisible
  */
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -269,6 +296,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+
 progress {
   vertical-align: baseline;
 }
@@ -276,6 +304,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
+
 textarea {
   overflow: auto;
 }
@@ -283,22 +312,25 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
  * Correct the outline style in Safari.
  */
-[type=search] {
+
+[type="search"] {
   outline-offset: -2px; /* 1 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -306,6 +338,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Fix font inheritance.
  */
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
@@ -314,22 +347,25 @@ textarea {
 /**
  * Fix appearance for Firefox
  */
-[type=number] {
+[type="number"] {
   -moz-appearance: textfield;
 }
 
 /**
  * Clickable labels
  */
+
 label[for] {
   cursor: pointer;
 }
 
 /* Interactive */
 /* ============================================ */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+
 details {
   display: block;
 }
@@ -337,6 +373,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
+
 summary {
   display: list-item;
 }
@@ -344,15 +381,18 @@ summary {
 /*
  * Remove outline for editable content.
  */
+
 [contenteditable]:focus {
   outline: auto;
 }
 
 /* Tables */
 /* ============================================ */
+
 /**
 1. Correct table border color inheritance in all Chrome and Safari.
 */
+
 table {
   border-color: inherit; /* 1 */
   border-collapse: collapse;
@@ -372,134 +412,3 @@ th {
   text-align: left;
   font-weight: bold;
 }
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  font-size: 16px;
-}
-
-body {
-  font-family: YuMincho;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-.l-header {
-  display: block;
-  position: absolute;
-  max-height: 1024px;
-  width: 192px;
-  background-color: rgba(242, 242, 242, 0.5);
-}
-.l-header::before {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-image: url("/../images/bg-header.png");
-  mix-blend-mode: overlay;
-  opacity: 30%;
-}
-
-.l-header__wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-bottom: 172px;
-  padding-top: 42px;
-}
-
-.l-header__logo {
-  margin-left: 24px;
-  font-size: 20px;
-  letter-spacing: 0.2em;
-  color: #76706a;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.l-header__menus {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  min-height: 732px;
-  margin-top: 48px;
-  margin-left: 24px;
-}
-
-.l-header__list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.l-header__sns {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.p-mv {
-  position: relative;
-  height: 1024px;
-  padding-bottom: 30px;
-}
-
-.p-mv__title {
-  position: absolute;
-  z-index: 10;
-  top: 80px;
-  right: 240px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 16px;
-  font-size: 32px;
-}
-.p-mv__title span {
-  display: inline-block;
-  background-color: #ffffff;
-  width: 32px;
-  height: 336px;
-  line-height: 48px;
-}
-
-.p-mv__bg {
-  display: block;
-  position: absolute;
-  top: 120px;
-  right: 0;
-  max-height: 732px;
-  max-width: 1120px;
-  margin-left: 320px;
-}
-.p-mv__bg img {
-  height: 732px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* ==========================================================================
-   Global
-   ========================================================================== */
-/* ==========================================================================
-   Foundation
-   ========================================================================== */
-/* ==========================================================================
-   Layout
-   ========================================================================== */
-/* ==========================================================================
-   Object
-   ========================================================================== *//*# sourceMappingURL=style.css.map */

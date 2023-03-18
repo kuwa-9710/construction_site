@@ -1,0 +1,42 @@
+@use "../../global" as *;
+
+.p-mv {
+  position: relative;
+  height: 1024px;
+  padding-bottom: 30px; 
+}
+
+.p-mv__title {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  right: 240px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  font-size: 32px;  
+
+  & span {
+    display: inline-block;
+    background-color: $cWhite;
+    width: 32px;
+    height: 336px;
+    line-height: 48px;
+  }
+}
+
+.p-mv__bg {
+  display: block;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  max-height: 732px;
+  max-width: 1120px;
+  margin-left: 320px;
+
+  & img {
+    height: 732px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

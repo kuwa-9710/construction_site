@@ -1,0 +1,64 @@
+@use "../global" as *;
+
+.l-header {
+  display: block;
+  position: absolute;  
+  max-height: 1024px;
+  width: 192px;
+  background-color: rgba(242, 242, 242, 0.5);
+
+  &::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("/../images/bg-header.png");
+    mix-blend-mode: overlay;
+    opacity: 30%;
+  }
+}
+
+.l-header__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 172px;
+  padding-top: 42px;
+}
+
+.l-header__logo {
+  margin-left: 24px;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: $cLightBlack;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.l-header__menus {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 732px;
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+.l-header__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.l-header__sns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
