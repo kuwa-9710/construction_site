@@ -1,0 +1,27 @@
+.c-slider {
+  width: 520px;
+}
+
+.c-slider__image {
+  height: 360px;
+  width: 520px;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-slider__title {
+  display: block;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1em;
+}
+
+.c-slider__text {
+  margin-top: 16px;
+  line-height: 24px;
+}

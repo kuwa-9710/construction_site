@@ -1,0 +1,14 @@
+.c-sub-title {
+  display: inline-block;
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  &--vertical {
+    width: 16px;
+    height: 58px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+}

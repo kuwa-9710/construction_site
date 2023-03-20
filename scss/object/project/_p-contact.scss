@@ -1,0 +1,82 @@
+@use "../../global" as *;
+
+.p-contact {
+  margin-top: 64px;
+  background-color: $cGray;
+  position: relative;
+  height: 480px;
+}
+
+.p-contact__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 168px;
+  margin-left: auto;
+}
+
+.p-contact__title {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+
+  & .c-sub-title {
+    margin-top: 91px;
+  }
+
+  & .c-title {
+    margin-top: 80px;
+  }
+}
+
+.p-contact__contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-contact__tel {
+  margin-top: 32px;
+  display: flex;
+
+  & .list-title {
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+  }
+
+  & .list-content {
+    font-size: 20px;
+    line-height: 23px;
+
+    &:first-of-type {
+      margin-right: 45px;
+    }
+  }
+}
+
+.p-contact__time {
+  margin-top: 32px;
+  display: flex;
+  gap: 10px;
+
+  & .list-title {
+    font-weight: 500;
+  }
+
+  & .list-content {
+    font-weight: 500;
+  }
+}
+
+.p-contact__button {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 22px 0 23px 0;
+  border: 1px solid $cBlack;
+}

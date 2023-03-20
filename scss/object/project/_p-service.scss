@@ -1,0 +1,64 @@
+@use "../../global" as *;
+
+.p-service {
+  position: relative;
+  margin-top: 64px;
+  padding-bottom: 64px;
+  padding-top: 40px;
+  background-color: $cBeige;
+
+  & .c-button {
+    margin: 32px 120px 0 auto;    
+  }
+}
+
+.p-service__wrapper {
+  display: flex;
+}
+
+.p-service__title {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  margin-left: 320px;
+
+  & .c-title--vertical {
+    margin-top: 40px;
+  }
+
+  & .c-sub-title--vertical {
+    margin-top: 51px;
+  }
+}
+
+.p-service__cards {
+  margin-top: 120px;
+  margin-left: 48px;
+  display: flex;
+  gap: 24px;
+}
+
+.p-service__card {
+  width: 280px;
+}
+
+.p-service__card__image {
+  width: 100%;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.p-service__card__title {
+  display: block;
+  font-size: 24px;
+  line-height: 1em;
+  margin-top: 24px;
+}
+
+.p-service__card__text {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 171%;
+}

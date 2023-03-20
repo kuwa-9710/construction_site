@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>還普 | compcamp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,7 +37,7 @@
                         <li><a>Twitter</a></li>
                         <li><a>Facebook</a></li>
                         <li><a>Instagram</a></li>
-                    </ul>            
+                    </ul>
                 </div>
             </div>
         </header>
@@ -54,14 +55,14 @@
         <!-- /mv -->
 
         <!-- concept -->
-        <section class="p-concept">
+        <section class="p-concept" id="concept">
             <div class="p-concept__l">
                 <img src="/images/concept.jpg" alt="">
             </div>
             <div class="p-concept__r">
-                <span class="c-sub-title"></span>
+                <span class="c-sub-title">CONCEPT</span>
                 <h2 class="c-title">自然の中で暮らすような家</h2>
-                <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。<br>
+                <p class="p-concept__text">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。<br>
                     サンプルテキストサンプルテキストサンプルテキストサンプルテキスト、サンプルテキストサンプルテキストサンプルテキストサンプルテキスト。</p>
                 <a class="c-button" href="#">詳しく見る</a>
             </div>
@@ -70,55 +71,212 @@
 
         <!-- story -->
         <section class="p-story">
-            <span class="c-sub-title"></span>
-            <h2 class="c-title">自然の中で暮らすような家</h2>
-            <ul class="c-slider">
-                <li>
-                    <img src="" alt="">
-                    <span>タイトルタイトル</span>
-                    <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
-                </li>
-            </ul>
+            <span class="c-sub-title">STORY</span>
+            <h2 class="c-title">建築事例</h2>
+            <p class="p-story__text">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。</p>
+            <div class="swiper">
+                <ul class="p-story__sliders swiper-wrapper">
+                    <li class="c-slider swiper-slide">
+                        <div class="c-slider__image">
+                            <img src="/images/work_1.jpg" alt="">
+                        </div>
+                        <span class="c-slider__title">タイトルタイトル</span>
+                        <p class="c-slider__text">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="c-slider swiper-slide">
+                        <div class="c-slider__image">
+                            <img src="/images/work_2.jpg" alt="">
+                        </div>
+                        <span class="c-slider__title">タイトルタイトル</span>
+                        <p class="c-slider__text">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="c-slider swiper-slide">
+                        <div class="c-slider__image">
+                            <img src="/images/work_3.jpg" alt="">
+                        </div>
+                        <span class="c-slider__title">タイトルタイトル</span>
+                        <p class="c-slider__text">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="c-slider swiper-slide">
+                        <div class="c-slider__image">
+                            <img src="/images/work_4.jpg" alt="">
+                        </div>
+                        <span class="c-slider__title">タイトルタイトル</span>
+                        <p class="c-slider__text">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                </ul>
+            </div>
             <a href="" class="c-button c-button-arrow">scroll</a>
         </section>
         <!-- /story -->
 
         <!-- service -->
         <section class="p-service">
-
+            <div class="p-service__wrapper">
+                <div class="p-service__title">
+                    <span class="c-sub-title c-sub-title--vertical">SERVICE</span>
+                    <h2 class="c-title c-title--vertical">こだわりの家づくり</h2>
+                </div>
+                <ul class="p-service__cards">
+                    <li class="p-service__card">
+                        <div class="p-service__card__image">
+                            <img src="/images/service.jpg" alt="">
+                        </div>
+                        <span class="p-service__card__title">タイトルタイトル</span>
+                        <p class="p-service__card__text">
+                            サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="p-service__card">
+                        <div class="p-service__card__image">
+                            <img src="/images/service.jpg" alt="">
+                        </div>
+                        <span class="p-service__card__title">タイトルタイトル</span>
+                        <p class="p-service__card__text">
+                            サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="p-service__card">
+                        <div class="p-service__card__image">
+                            <img src="/images/service.jpg" alt="">
+                        </div>
+                        <span class="p-service__card__title">タイトルタイトル</span>
+                        <p class="p-service__card__text">
+                            サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+                    </li>
+                </ul>
+            </div>
+            <a class="c-button" href="#">一覧を見る</a>
         </section>
         <!-- /service -->
 
         <!-- about -->
         <section class="p-about">
-
+            <div class="p-about__top">
+                <div class="p-about__title">
+                    <span class="c-sub-title c-sub-title--vertical">ABOUT</span>
+                    <h2 class="c-title c-title--vertical">家造りへの思い</h2>
+                </div>
+                <div class="p-about__image">
+                    <img src="/images/about.jpg" alt="">
+                </div>
+            </div>
+            <div class="p-about__bottom">
+                <p class="p-about__bottom__text">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。<br>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト、<br>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト。</p>
+                <a href="#" class="c-button">詳しく見る</a>
+            </div>
         </section>
         <!-- /about -->
 
         <!-- blog -->
         <section class="p-blog">
-
+            <div class="p-blog__wrapper">
+                <div class="p-blog__title">
+                    <span class="c-sub-title c-sub-title--vertical">BLOG</span>
+                    <h2 class="c-title c-title--vertical">ブログ</h2>
+                </div>
+                <ul class="p-blog__contents">
+                    <li class="p-blog__card">
+                        <img class="p-blog__card__image" src="/images/blog.jpg" alt="">
+                        <time class="p-blog__card__time">2022.1.14</time>
+                        <span class="p-blog__card__title">タイトルタイトル</span>
+                        <p class="p-blog__card__text">サンプルテキストサンプルテキスト<br>
+                            サンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="p-blog__card">
+                        <img class="p-blog__card__image" src="/images/blog.jpg" alt="">
+                        <time class="p-blog__card__time">2022.1.14</time>
+                        <span class="p-blog__card__title">タイトルタイトル</span>
+                        <p class="p-blog__card__text">サンプルテキストサンプルテキスト<br>
+                            サンプルテキストサンプルテキスト</p>
+                    </li>
+                    <li class="p-blog__card">
+                        <img class="p-blog__card__image" src="/images/blog.jpg" alt="">
+                        <time class="p-blog__card__time">2022.1.14</time>
+                        <span class="p-blog__card__title">タイトルタイトル</span>
+                        <p class="p-blog__card__text">サンプルテキストサンプルテキスト<br>
+                            サンプルテキストサンプルテキスト</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="c-button">一覧を見る</a>
         </section>
         <!-- /blog -->
 
         <!-- access -->
         <section class="p-access">
-
+            <div class="p-access__wrapper">
+                <div class="p-access__map">
+                    <img src="/images/map-img.jpg" alt="" class="p-access__map__imag">
+                </div>
+                <div class="p-access__address">
+                    <span class="c-sub-title">ACCESS</span>
+                    <h2 class="c-title">所在地</h2>
+                    <address class="p-access__address__text">
+                        <span>〒 811-1111</span>
+                        <p>福岡県福岡市中央区天神２丁目１−１</p>
+                    </address>
+                </div>
+            </div>
         </section>
         <!-- /access -->
 
         <!-- contact -->
         <section class="p-contact">
+            <div class="p-contact__wrapper">
+                <div class="p-contact__title">
+                    <span class="c-sub-title c-sub-title--vertical">CONTACT</span>
+                    <h2 class="c-title c-title--vertical">お問い合わせ</h2>
+                </div>
+                <div class="p-contact__contents">
+                    <span class="p-contact__text">ご質問・ご相談は、お気軽にお問い合わせ下さい</span>
+                    <dl class="p-contact__tel">
+                        <dt class="list-title">TEL</dt>
+                        <dd class="list-content">092-111-1111</dd>
+                        <dt class="list-title">FAX</dt>
+                        <dd class="list-content">092-111-1111</dd>
+                    </dl>
+                    <dl class="p-contact__time">
+                        <dt class="list-tile">受付時間</dt>
+                        <dd class="list-content">8:00~17:00(日・祝日除く)</dd>
+                    </dl>
+                    <a class="p-contact__button" href="#">
+                        <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 2.5L7 6.5H10L14 2.5M1 11V1H16V11H1Z" stroke="#333333" />
+                            <path d="M3.5 9.5L6 7" stroke="#333333" />
+                            <path d="M13.5 9.5L11 7" stroke="#333333" />
+                        </svg>
+                        お問い合わせフォーム
+                    </a>
+                </div>
 
+            </div>
         </section>
         <!-- /contact -->
 
         <!-- footer -->
         <footer class="l-footer">
-
+            <div class="l-footer__wrapper">
+                <address class="l-footer__l">
+                    <span class="l-footer__logo">株式会社　環普</span>
+                    <span>〒811-1111 福岡県福岡市中央区天神２丁目１−１</span>
+                </address>
+                <ul class="l-footer__r">
+                    <li><a href="">コンセプト</a></li>
+                    <li><a href="">建築事例</a></li>
+                    <li><a href="">こだわりの家づくり</a></li>
+                    <li><a href="">家づくりへの思い</a></li>
+                    <li><a href="">ブログ</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                    <li><a href="">個人情報保護方針</a></li>
+                </ul>
+            </div>
         </footer>
         <!-- /footer -->
     </main>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer type="module" src="/js/main.js"></script>
 </body>
 
 </html>

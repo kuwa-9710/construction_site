@@ -1,0 +1,26 @@
+.p-story {
+  margin-top: 120px;
+  margin-left: 320px;
+
+  & .c-button {
+    margin: 80px 120px 0 auto;
+  }
+}
+
+.p-story__text {
+  margin-top: 16px;
+  width: 720px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.p-story__sliders {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+ 
+  & .swiper-wrapper {
+    overflow: visible;
+  }
+}

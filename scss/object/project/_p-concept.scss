@@ -1,0 +1,29 @@
+.p-concept {
+  display: flex;
+}
+
+.p-concept__l {
+  margin-right: 160px;
+  & img {
+    width: 640px;
+    height: 720px;
+  }
+}
+
+.p-concept__r {
+  position: relative;
+  margin-top: 120px;
+  width: 520px;
+
+  & .c-button {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 16px;
+  }
+}
+
+.p-concept__text {
+  margin-top: 40px;
+  font-weight: 500;
+  line-height: 1.5em;
+}

@@ -1,0 +1,29 @@
+@use "../global" as *;
+
+.l-footer {
+  background-color: $cLightBlack;
+  color: $cWhite;
+}
+
+.l-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 120px 0 320px;
+}
+
+.l-footer__r {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 8px;
+  margin: 40px 0 48px 0;
+  height: 160px;
+  width: 302px;
+}
+
+.l-footer__logo {
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 7px;
+}
