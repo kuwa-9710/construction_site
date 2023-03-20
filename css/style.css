@@ -564,10 +564,10 @@ body {
   position: absolute;
   z-index: 10;
   top: 80px;
-  right: 240px;
+  right: 204px;
   display: flex;
   flex-direction: row-reverse;
-  gap: 16px;
+  gap: 24px;
   font-size: 32px;
 }
 .p-mv__title span {
@@ -650,9 +650,8 @@ body {
 
 .p-service {
   position: relative;
-  margin-top: 64px;
+  margin-top: 82px;
   padding-bottom: 64px;
-  padding-top: 40px;
   background-color: rgb(242, 242, 237);
 }
 .p-service .c-button {

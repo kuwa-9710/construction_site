@@ -2,8 +2,7 @@
    Swiper.js
    ========================================================================== */
 const swiper = new Swiper(".swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
+  slidesPerView: "auto",  
   grabCursor: true,
   loop: true,
 });
