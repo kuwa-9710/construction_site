@@ -1,6 +1,9 @@
+@use "../../global" as *;
+
 .p-story {
   margin-top: 120px;
   margin-left: 320px;
+  max-width: 1024px;
 
   & .c-button {
     margin: 80px 120px 0 auto;
@@ -19,8 +22,37 @@
   display: flex;
   flex-direction: row;
   gap: 56px;
- 
+
   & .swiper-wrapper {
     overflow: visible;
+  }
+}
+
+/* =================================================
+ tab
+=================================================== */
+@include media(tab) {
+  .p-story {
+    margin-top: 96px;
+    margin-left: 0;
+    padding: 0 16px;
+
+    & .c-title {
+      margin-top: 8px;
+    }
+
+    & .c-button {
+      margin: 66px 36px 0 auto;
+    }
+  }
+
+  .p-story__text {
+    margin-top: 40px;
+    width: auto;
+  }
+
+  .p-story__sliders {
+    margin-top: 56px;
+    gap: 16px;
   }
 }

@@ -1,3 +1,5 @@
+@use "../../global" as *;
+
 .p-blog {
   & .c-button {
     margin: 0 120px 0 auto;
@@ -56,4 +58,56 @@
 .p-blog__card__text {
   margin-top: 8px;
   line-height: 1.5em;
+}
+
+/* =================================================
+ tab
+=================================================== */
+@include media(tab) {
+  .p-blog {
+    & .c-button {
+      margin: 48px auto 0 auto;
+    }
+  }
+
+  .p-blog__wrapper {
+    margin-left: 0;
+    gap: 0;
+    display: block;
+  }
+
+  .p-blog__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & .c-title--vertical {
+      height: auto;
+    }
+
+    & .c-sub-title--vertical {
+      position: absolute;
+      left: calc(50% + 26px);
+      transform: translateX(-50%);
+    }
+  }
+
+  .p-blog__contents {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 40px;
+    padding: 0 16px;
+  }
+
+  .p-blog__card {
+    width: 100%;
+  }
+
+  .p-blog__card__time {
+    display: none;
+  }
+
+  .p-blog__card__title {
+    margin-top: 16px;
+  }
 }

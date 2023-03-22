@@ -1,3 +1,5 @@
+@use "../../global" as *;
+
 .c-slider {
   width: 520px;
 }
@@ -24,4 +26,22 @@
 .c-slider__text {
   margin-top: 16px;
   line-height: 24px;
+}
+
+/* =================================================
+ tab
+=================================================== */
+@include media(tab) {
+  .c-slider {
+    width: 320px;
+  }
+
+  .c-slider__image {
+    width: 320px;
+    height: 220px;
+  }
+
+  .c-slider__title {
+    margin-top: 32px;
+  }
 }

@@ -1,3 +1,5 @@
+@use "../../global" as *;
+
 .c-title {
   margin-top: 8px;
   font-weight: 500;
@@ -11,5 +13,14 @@
     text-align: left;
     width: 32px;
     height: 432px;
+  }
+}
+
+/* =================================================
+ tab
+=================================================== */
+@include media(tab) {
+  .c-title {
+    font-size: 24px;    
   }
 }

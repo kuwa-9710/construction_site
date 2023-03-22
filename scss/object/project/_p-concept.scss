@@ -1,3 +1,5 @@
+@use "../../global" as *;
+
 .p-concept {
   display: flex;
 }
@@ -26,4 +28,34 @@
   margin-top: 40px;
   font-weight: 500;
   line-height: 1.5em;
+}
+
+/* =================================================
+ tab
+=================================================== */
+@include media(tab) {
+  .p-concept {
+    flex-direction: column-reverse;
+  }
+
+  .p-concept__l {
+    margin-top: 24px;
+    margin-right: 0;
+    width: 100vw;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .p-concept__r {
+    margin-top: 56px;
+    padding: 0 16px;
+    width: auto;
+  }
+
+  .p-concept__text {
+    
+  }
 }

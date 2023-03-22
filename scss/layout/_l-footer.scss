@@ -27,3 +27,33 @@
   margin-top: 48px;
   margin-bottom: 7px;
 }
+
+.br-tab {
+  display: none;
+}
+
+/* =================================================
+ tab
+=================================================== */
+@include media(tab) {
+  .l-footer__wrapper {
+    flex-direction: column;
+    padding: 0 16px 0 16px;
+  }
+
+  .l-footer__r {
+    height: auto;
+    column-gap: 0;
+    row-gap: 24px;
+    margin-top: 24px;
+  }
+
+  .l-footer__logo {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+
+  .br-tab {
+    display: inline;
+  }
+}
