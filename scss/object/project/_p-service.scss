@@ -3,23 +3,25 @@
 .p-service {
   position: relative;
   margin-top: 82px;
-  padding-bottom: 64px;  
+  padding-bottom: 64px;
   background-color: $cBeige;
 
   & .c-button {
-    margin: 32px 120px 0 auto;    
+    margin: 32px 120px 0 auto;
   }
 }
 
 .p-service__wrapper {
   display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .p-service__title {
   display: inline-flex;
   flex-direction: row-reverse;
   gap: 16px;
-  margin-left: 320px;
+  margin-left: auto;
 
   & .c-title--vertical {
     margin-top: 40px;
@@ -31,8 +33,7 @@
 }
 
 .p-service__cards {
-  margin-top: 120px;
-  margin-left: 48px;
+  margin: 120px 120px 0 48px;  
   display: flex;
   gap: 24px;
 }
@@ -63,6 +64,23 @@
 }
 
 /* =================================================
+ 1250px
+=================================================== */
+@media screen and (max-width: 1250px) {
+  .p-service__wrapper {
+    justify-content: center;
+  }
+
+  .p-service__title {
+    margin-left: 0;
+  }
+
+  .p-service__cards {
+    margin-right: 0;
+  }
+}
+
+/* =================================================
  tab
 =================================================== */
 @include media(tab) {
@@ -79,26 +97,23 @@
     margin-left: 0;
     display: flex;
     justify-content: center;
-    
+
     & .c-sub-title--vertical {
       position: absolute;
       left: calc(50% + 26px);
       transform: translateX(-50%);
-    }
-
-    & .c-title--vertical {
-
     }
   }
 
   .p-service__cards {
     flex-direction: column;
     padding: 0 16px;
-    margin-top: 40px;
-    margin-left: 0;
+    margin: 40px 0 0 0;    
   }
 
   .p-service__card {
     width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
   }
 }

@@ -5,6 +5,10 @@
   margin-left: 320px;
   max-width: 1024px;
 
+  & .swiper {
+    overflow: visible;
+  }
+
   & .c-button {
     margin: 80px 120px 0 auto;
   }
@@ -23,8 +27,8 @@
   flex-direction: row;
   gap: 56px;
 
-  & .swiper-wrapper {
-    overflow: visible;
+  & li:last-child {
+    margin-right: 100px;
   }
 }
 
@@ -33,9 +37,9 @@
 =================================================== */
 @include media(tab) {
   .p-story {
-    margin-top: 96px;
-    margin-left: 0;
     padding: 0 16px;
+    max-width: 760px;
+    margin: 96px auto 0 auto;
 
     & .c-title {
       margin-top: 8px;

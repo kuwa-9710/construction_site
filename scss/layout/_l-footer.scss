@@ -6,9 +6,11 @@
 }
 
 .l-footer__wrapper {
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   padding: 0 120px 0 320px;
+  margin: 0 auto;
 }
 
 .l-footer__r {
