@@ -41,6 +41,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right;
   }
 }
 
@@ -108,7 +109,7 @@
  sp
 =================================================== */
 @include media(sp) {
-  .p-about {
+  .p-about__wrapper {
     padding-bottom: 376px;
   }
 

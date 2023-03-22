@@ -1024,6 +1024,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .p-about__bottom {
@@ -1083,7 +1085,7 @@ body {
  sp
 =================================================== */
 @media screen and (max-width: 599px) {
-  .p-about {
+  .p-about__wrapper {
     padding-bottom: 376px;
   }
   .p-about__image {
